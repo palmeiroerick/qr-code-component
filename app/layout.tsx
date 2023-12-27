@@ -1,8 +1,8 @@
+import "@/style/globals.css";
 import type { Metadata } from "next";
 import type { NextFont } from "next/dist/compiled/@next/font";
-import type { ReactNode } from "react";
 import { Outfit } from "next/font/google";
-import "@/style/globals.css";
+import type { ReactNode } from "react";
 
 const outfit: NextFont = Outfit({
   subsets: ["latin"],
@@ -16,7 +16,11 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
-      <body className={outfit.className}>{children}</body>
+      <body
+        className={`${outfit.className} flex h-screen w-screen items-center justify-center bg-lightGray`}
+      >
+        {children}
+      </body>
     </html>
   );
 };
