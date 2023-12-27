@@ -1,19 +1,13 @@
-import Image from "next/image";
+import QRCode from "@/components/QRCode";
+import Text from "@/components/Text";
+import Title from "@/components/Title";
 
 const Home = () => {
   return (
     <main>
-      <Image
-        src="/assets/image-qr-code.png"
-        alt="qr code image"
-        height={150}
-        width={150}
-      />
-      <h2>Improve your front-end skills by building projects</h2>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
+      <QRCode />
+      <Title />
+      <Text />
     </main>
   );
 };
