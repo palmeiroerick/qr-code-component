@@ -4,7 +4,7 @@ import Title from "@/components/Title";
 
 const Home = () => {
   return (
-    <main>
+    <main className="gap-5 flex w-80 flex-col items-center rounded-2xl bg-white p-4 pb-10">
       <QRCode />
       <Title />
       <Text />
