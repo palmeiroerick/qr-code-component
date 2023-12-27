@@ -5,8 +5,8 @@ const QRCode = () => {
     <Image
       src="/assets/image-qr-code.png"
       alt="qr code image"
-      height={150}
-      width={150}
+      height={288}
+      width={288}
     />
   );
 };
