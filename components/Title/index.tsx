@@ -1,8 +1,7 @@
 const Title = () => {
   return (
-    <p>
-      Scan the QR code to visit Frontend Mentor and take your coding skills to
-      the next level
+    <p className="text-center text-2xl font-bold text-darkBlue">
+      Improve your front-end skills by building projects
     </p>
   );
 };
